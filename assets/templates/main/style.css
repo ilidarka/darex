@@ -1,0 +1,104 @@
+:root {
+    --main-green: #08B931;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+.buttons {
+    color: var(--main-green);
+}
+.mainWrapper {
+    max-width: 1170px;
+    width: 100%;
+    display: flex;
+}
+.colored {
+    color: var(--main-green);
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+header .mainWrapper {
+    justify-content: center;
+}
+.headerContainer {
+    width: 100%;
+    min-height: 166px;
+    display: flex;
+    align-items: center;
+}
+.headerTopBottom {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.headerTop {
+    width: 100%;
+    min-height: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #e3e3e3;
+    margin-top: 25px;
+}
+.headerTop .city {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-left: 24px;
+}
+.headerBottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.headerText {
+    margin-left: 22px;
+    color: #323232;
+}
+header .signInInput {
+    height: 44px;
+    width: 297px;
+    border: 1px solid #e3e3e3;
+    border-radius: 6px;
+    padding-left: 25px;
+    background: url("./img/search.svg") no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+    background-size: auto 60%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #616161;
+}
+header .requestCall {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+header .requestCall .number span {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #323232;
+    letter-spacing: 1.1px;
+}
+header .number {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+header .phoneLink {
+    color: var(--main-green);
+}
