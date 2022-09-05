@@ -259,14 +259,14 @@ header .phoneLink {
     flex-direction: column;
     align-items: center;
 }
-.customerChoiseSection .motoListItem img {
+.customerChoiseSection .motoListItem .itemImage {
     margin-top: 15px;
 }
-.customerChoiseSection .motoListItem img:hover {
+.customerChoiseSection .motoListItem:hover .itemImage {
     filter: brightness(50%);
 }
-.customerChoiseSection .motoListItem img:hover .customerChoiseSection .buttons {
-    display: block;
+.customerChoiseSection .motoListItem:hover .buttons {
+    display: flex !important;
 }
 .customerChoiseSection .motoListItem span {
     font-weight: 700;
@@ -277,6 +277,7 @@ header .phoneLink {
 }
 .customerChoiseSection .buttons {
     position: absolute;
+    display: none !important;
     width: 183px;
     height: 57px;
     background-color: var(--main-green);
@@ -293,7 +294,4 @@ header .phoneLink {
     align-items: center;
     gap: 10px;
     top: 40%;
-}
-.customerChoiseSection .buttons img {
-    margin-top: 0;
 }
