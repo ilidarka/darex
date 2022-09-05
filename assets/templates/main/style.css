@@ -9,6 +9,11 @@
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
 }
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .buttons {
     width: 250px;
     height: 78px;
@@ -22,6 +27,13 @@
 }
 .colored {
     color: var(--main-green);
+}
+h3 {
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #323232;
 }
 header {
     width: 100%;
@@ -144,6 +156,7 @@ header .phoneLink {
     display: flex;
     justify-content: center;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/mainImage.jpg");
+    background-size: cover;
     color: #fff;
 }
 .mainSection .mainWrapper {
@@ -178,4 +191,109 @@ header .phoneLink {
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+.factsSection {
+    margin-top: 92px;
+}
+.factsSection .mainWrapper {
+    justify-content: center;
+}
+.factsSection .containerLeft {
+    display: flex;
+    flex-direction: column;
+    background: url("./img/greenLine.png") no-repeat;
+    background-position-y: 33%;
+}
+.factsSection .containerLeft p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #323232;
+    margin-top: 92px;
+}
+.factsSection .containerLeft .leftContainerList {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding-right: 40px;
+}
+.factsSection .lefContainerItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.factsSection .lefContainerItem span {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+.customerChoiseSection {
+    min-height: 756px;
+    background-color: #202020;
+}
+.customerChoiseSection .mainWrapper {
+    flex-direction: column;
+    background: url("./img/greenLine.png") no-repeat;
+    background-position-y: 24%;
+}
+.customerChoiseSection h3 {
+    margin-top: 78px;
+    color: #fff;
+}
+.customerChoiseSection .motoList {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.customerChoiseSection .motoListItem {
+    margin-top: 30px;
+    position: relative;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.customerChoiseSection .motoListItem img {
+    margin-top: 15px;
+}
+.customerChoiseSection .motoListItem img:hover {
+    filter: brightness(50%);
+}
+.customerChoiseSection .motoListItem img:hover .customerChoiseSection .buttons {
+    display: block;
+}
+.customerChoiseSection .motoListItem span {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.customerChoiseSection .buttons {
+    position: absolute;
+    width: 183px;
+    height: 57px;
+    background-color: var(--main-green);
+    border-radius: 5px;
+    box-shadow: 0px 4px 14.7225px #146627, 0px 2px 0px #064314;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    top: 40%;
+}
+.customerChoiseSection .buttons img {
+    margin-top: 0;
 }
