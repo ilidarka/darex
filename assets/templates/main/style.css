@@ -366,3 +366,22 @@ header .phoneLink {
     color: #323232;
     margin-top: 10px;
 }
+.aboutUsSection {
+    margin-top: 110px;
+}
+.aboutUsSection .mainWrapper {
+    justify-content: space-between;
+}
+.aboutUsSection .leftContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.aboutUsSection .leftContainer p {
+    margin-top: 52px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #323232;
+}
