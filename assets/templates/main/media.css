@@ -1,0 +1,201 @@
+@media (max-width: 1100px) {
+    .customerChoiseSection .motoListItem {
+        width: 33%;
+    }
+    .customerChoiseSection {
+        padding-bottom: 30px;
+    }
+    .customerChoiseSection .mainWrapper {
+        padding: 0 30px;
+        background-position-x: 3%;
+        background-position-y: 18%;
+    }
+    .newsSection .mainWrapper {
+        padding: 0 40px;
+        background-position-x: 4%;
+    }
+    .aboutUsSection .mainWrapper {
+        padding: 0 40px;
+    }
+    footer .footerTop, footer .footerBottom {
+        padding: 0 40px;
+    }
+}
+@media (max-width: 886px) {
+    .aboutUsSection .mainWrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .newsSection .newsItems {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .newsItem {
+        width: 40% !important;
+        margin-bottom: 50px;
+    }
+    .newsSection .mainWrapper {
+        background-position-y: 10%;
+        background-position-x: 5%;
+    }
+}
+@media (max-width: 870px) {
+    .headerNavBar {
+        display: none;
+    }
+    #menu {
+        display: block !important;
+    }
+    header .headerBottom {
+        flex-wrap: wrap;
+    }
+    header .requestCall {
+        margin: 10px 0;
+    }
+    .factsSection .mainWrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .factsSection .containerLeft {
+        width: 70%;
+    }
+    .customerChoiseSection .mainWrapper {
+        background-position-y: 15%;
+        background-position-x: 4%;
+    }
+    .customerChoiseSection .motoList {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .customerChoiseSection .motoListItem {
+        width: 50%;
+    }
+    .aboutUsSection .leftContainer, .aboutUsSection .rightContainer {
+        width: 90%;
+    }
+}
+@media (max-width: 709px) {
+    .newsSection .newsItem {
+        width: 51% !important;
+        margin-top: 30px;
+    }
+    .newsSection .mainWrapper {
+        background-position-y: 7%;
+    }
+    footer .footerTop {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+    footer .footerTop .leftContainer {
+        width: 100%;
+    }
+}
+@media (max-width: 662px) {
+    .aboutUsSection .leftContainer {
+        background-position-y: 35%;
+    }
+    .customerChoiseSection .motoListItem {
+        width: 100%;
+    }
+    .customerChoiseSection .mainWrapper {
+        background-position-y: 8%;
+        background-position-x: 6%;
+    }
+    .factsSection .containerLeft {
+        width: 90%;
+    }
+    .newsSection .newsItem {
+        width: 74% !important;
+    }
+    .individualSection .mainWrapper {
+        padding-left: 0;
+        align-items: center;
+    }
+    .benefitsSection .topContainer {
+        padding-left: 0;
+        padding-top: 180px;
+        align-items: center;
+    }
+    .benefitsSection .benefitsList {
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+    .benefitsSection {
+        background-position-x: 50%;
+    }
+}
+@media (max-width: 510px) {
+    header .headerBottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    header .headerTop {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    header .city {
+        margin-left: 0 !important;
+    }
+    .factsSection .leftContainerList {
+        padding-right: 0 !important;
+        flex-wrap: wrap;
+    }
+    .factsSection .lefContainerItem {
+        width: 50%;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 470px) {
+    header .headerContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    header .headerTop {
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    header .headerBottom {
+        align-items: center;
+        padding-bottom: 40px;
+    }
+    .newsSection .newsItem {
+        width: 100% !important;
+    }
+    .newsSection .mainWrapper {
+        background-position-x: 12%;
+    }
+    footer .footerTop {
+        padding: 0 15px;
+    }
+}
+@media (max-width: 360px) {
+    .newsSection .mainWrapper {
+        padding: 0 25px;
+    }
+    .aboutUsSection .mainWrapper {
+        padding: 0 10px;
+    }
+    .customerChoiseSection .mainWrapper {
+        background-position-x: 13%;
+    }
+    .factsSection .containerLeft {
+        background-position-y: 25%;
+    }
+    .newsSection .newsDesc {
+        padding-right: 20px;
+    }
+    footer .footerBottom {
+        padding: 0 10px;
+    }
+    .aboutUsSection .mainWrapper {
+        padding: 0;
+    }
+    .aboutUsSection .aboutUsListItem {
+        width: 50% !important;
+    }
+}

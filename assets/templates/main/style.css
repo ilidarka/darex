@@ -141,14 +141,17 @@ header .phoneLink {
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
+}
+.headerNavBar a {
     color: #fff;
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
     text-transform: uppercase;
+    text-decoration: none;
 }
-.selectedLi {
-    color: #186329;
+.selected {
+    color: #186329 !important;
 }
 .mainSection {
     width: 100%;
@@ -199,6 +202,7 @@ header .phoneLink {
     justify-content: center;
 }
 .factsSection .containerLeft {
+    width: 50%;
     display: flex;
     flex-direction: column;
     background: url("./img/greenLine.png") no-repeat;
@@ -210,6 +214,9 @@ header .phoneLink {
     line-height: 160%;
     color: #323232;
     margin-top: 92px;
+}
+.factsSection .containerRight img {
+    width: 100%;
 }
 .factsSection .containerLeft .leftContainerList {
     display: flex;
@@ -553,6 +560,9 @@ header .phoneLink {
 }
 .mapSection {
     margin-top: 28px;
+}
+.mapSection img {
+    width: 100%;
 }
 footer {
     width: 100%;

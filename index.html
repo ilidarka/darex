@@ -8,9 +8,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/templates/main/style.css">
+    <link rel="stylesheet" href="./assets/templates/main/media.css">
+    <link rel="stylesheet" href="./assets/templates/main/burgerStyle.css">
+    <script src="./assets/js/script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
+    <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="#">Квадроциклы</a></li>
+                <li><a class="selected" href="#">Водная техника</a></li>
+                <li><a href="#">Зимняя техника</a></li>
+                <li><a href="#">Мототехника</a></li>
+                <li><a href="#">Экипировка</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Рассрочка</a></li>
+                <li><a href="#">Контакты</a></li>
+           </ul>
+        </nav> 
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
     <header>
         <div class="mainWrapper">
             <div class="headerContainer">
@@ -44,14 +67,14 @@
         <div class="headerNavBar">
             <div class="mainWrapper">
                 <nav>
-                    <li>Квадроциклы</li>
-                    <li class="selectedLi">Водная техника</li>
-                    <li>Зимняя техника</li>
-                    <li>Мототехника</li>
-                    <li>Экипировка</li>
-                    <li>Новости</li>
-                    <li>Рассрочка</li>
-                    <li>Контакты</li>
+                    <li><a href="#">Квадроциклы</a></li>
+                    <li><a class="selected" href="#">Водная техника</a></li>
+                    <li><a href="#">Зимняя техника</a></li>
+                    <li><a href="#">Мототехника</a></li>
+                    <li><a href="#">Экипировка</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Рассрочка</a></li>
+                    <li><a href="#">Контакты</a></li>
                 </nav>
             </div>
         </div>
