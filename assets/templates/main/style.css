@@ -377,6 +377,8 @@ header .phoneLink {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    background: url("./img/greenLine.png") no-repeat;
+    background-position-y: 48%;
 }
 .aboutUsSection .leftContainer p {
     margin-top: 52px;
@@ -384,4 +386,282 @@ header .phoneLink {
     font-size: 16px;
     line-height: 26px;
     color: #323232;
+}
+.aboutUsSection .rightContainer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.aboutUsSection .rightContainer .aboutUsList {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.aboutUsSection .rightContainer .aboutUsListItem {
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.aboutUsSection .aboutUsListItem .number {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-green);
+}
+.aboutUsSection .aboutUsListItem .desc {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #323232;
+}
+.newsSection {
+    margin-top: 100px;
+    min-height: 661px;
+    background-color: #202020;
+}
+.newsSection .mainWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    background: url("./img/greenLine.png") no-repeat;
+    background-position-y: 15%;
+}
+.newsSection h3 {
+    margin-top: 43px;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.newsSection .newsItems {
+    margin-top: 67px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.newsSection .newsItem {
+    background-color: #fff;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.newsSection .newsItem .newsImage {
+    width: 100%;
+}
+.newsSection .newsTitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.newsSection .date {
+    background-color: #5f5f5f;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    text-transform: uppercase;
+    height: 66px;
+    width: 100px;
+    padding: 24px 17px 0 17px;
+}
+.newsSection .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #323232;
+    padding: 15px 0 0 12px;
+}
+.newsSection .newsDesc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #323232;
+    margin-top: 22px;
+    padding-left: 35px;
+}
+.newsSection .buttons {
+    background-color: var(--main-red);
+    box-shadow: 0px 2px 0px #AD1B2B;
+    border-radius: 4.41676px;
+    width: 149px;
+    height: 57px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 23px;
+    margin-left: 35px;
+    margin-bottom: 36px;
+    gap: 10px;
+}
+.individualSection {
+    min-height: 450px;
+    background-image: url("./img/individualBackgroundImage.png");
+    margin-top: -30px;
+}
+.individualSection .mainWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 75px;
+    padding-left: 161px;
+}
+.individualSection h3 {
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.individualSection span {
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+}
+.individualSection .buttons {
+    margin-top: 20px;
+    width: 217px;
+    height: 57px;
+    background-color: var(--main-red);
+    box-shadow: 0px 2px 0px #AD1B2B;
+    border-radius: 4.41676px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.mapSection {
+    margin-top: 28px;
+}
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+footer .mainWrapper {
+    flex-direction: column;
+    align-items: center;
+}
+footer .footerTop {
+    margin-top: 57px; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #E3E3E3;
+}
+footer .footerTop .leftContainer {
+    width: 50%;
+    display: flex;
+}
+footer .footerTop .lists {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+footer .footerTop .list span {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #323232;
+}
+footer ul {
+    list-style-type: none;
+}
+footer .footerTop .list a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 270%;
+    color: #323232;
+    text-decoration: none;
+}
+footer .footerTop .list a:checked {
+    text-decoration: underline;
+}
+footer .footerTop .footerInput {
+    height: 44px;
+    width: 297px;
+    border: 1px solid #e3e3e3;
+    border-radius: 6px;
+    padding-left: 25px;
+    background: url("./img/search.svg") no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+    background-size: auto 60%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #616161;  
+}
+footer .footerBottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+footer .footerBottom .coopyright {
+    margin: auto 0;
+}
+footer .footerCompanyLogo {
+    display: flex;
+    justify-content: center;
+    padding: 24px 14px;
+}
+footer .footerCompanyLogo .footerLink a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+footer .footerCompanyLogo .footerLink span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 14px;
+    color: #4f4f4f;
+}
+footer .footerCompanyLogo .footerLink span:first-child {
+    font-weight: 800;
+}
+footer .footerCompanyLogo .footerLink span:nth-child(2) {
+    font-weight: 500;
+}
+footer .footerCompanyLogo .footerLogoText a {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+footer .footerCompanyLogo .footerLogoText span {
+    padding-left: 10px;
+    border-left: 1px solid #1B1B1B50;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #4f4f4f;
+}
+footer .footerCompanyLogo a {
+    text-decoration: none;
+}
+footer .footerCompanyLogo img {
+    padding-right: 20px;
 }
