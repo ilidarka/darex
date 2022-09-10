@@ -105,6 +105,9 @@
     align-items: flex-start;
     gap: 10px;
 }
+.productsSection .productsItemImage {
+    width: 100%;
+}
 .productsSection .productsItem .productName {
     font-weight: 500;
     font-size: 14px;
@@ -170,5 +173,5 @@
     gap: 20px;
 }
 .selected {
-    color: var(--main-green) !important;
+    color: #186329 !important;
 }
