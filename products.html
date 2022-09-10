@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/templates/main/style.css">
+    <link rel="stylesheet" href="./assets/templates/main/media.css">
+    <link rel="stylesheet" href="./assets/templates/main/burgerStyle.css">
+    <link rel="stylesheet" href="./assets/templates/main/productsStyle.css">
+    <link rel="stylesheet" href="./assets/templates/main/checkBoxStyle.css">
+    <link rel="stylesheet" href="./assets/templates/main/rangeStyle.css">
+    <script src="./assets/js/script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="#">Квадроциклы</a></li>
+                <li><a class="selected" href="#">Водная техника</a></li>
+                <li><a href="#">Зимняя техника</a></li>
+                <li><a href="#">Мототехника</a></li>
+                <li><a href="#">Экипировка</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Рассрочка</a></li>
+                <li><a href="#">Контакты</a></li>
+           </ul>
+        </nav> 
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
+    <header>
+        <div class="mainWrapper">
+            <div class="headerContainer">
+                <img src="./assets/templates/main/img/logoImage.png" alt="logoImage">
+                <div class="headerTopBottom">
+                    <div class="headerTop">
+                        <div class="city">
+                            <img src="./assets/templates/main/img/landmark.svg" alt="landmark">
+                            <span>Ваш город: <span class="colored">Оренбург</span></span>
+                        </div>
+                        <div class="signIn">
+                            <img src="./assets/templates/main/img/singin.svg" alt="signIn">
+                            <span>Войти</span>
+                        </div>
+                    </div>
+                    <div class="headerBottom">
+                        <span class="headerText">Территория<br>активоного отдыха</span>
+                        <input class="signInInput" type="text" value="Поиск">
+                        <img src="./assets/templates/main/img/cart.svg" alt="cart">
+                        <div class="requestCall">
+                            <div class="number">
+                                <img src="./assets/templates/main/img/phone.svg" alt="phone">
+                                <span>+7 (843) 204-06-73</span>
+                            </div>
+                            <a class="phoneLink" href="tel:78432040673">Заказать звонок</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headerNavBar">
+            <div class="mainWrapper">
+                <nav>
+                    <li><a href="#">Квадроциклы</a></li>
+                    <li><a class="selected" href="#">Водная техника</a></li>
+                    <li><a href="#">Зимняя техника</a></li>
+                    <li><a href="#">Мототехника</a></li>
+                    <li><a href="#">Экипировка</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Рассрочка</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="breadcrumbs">
+            <div class="mainWrapper">
+                <ul>
+                    <li><a href="index.html">Главная /</a></li>
+                    <li><a href="#" class="selectedbreadcrumb">Категории товаров</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="productsSection">
+            <div class="mainWrapper">
+                <h3>Мотоциклы</h3>
+                <div class="container">
+                    <div class="filterContainer">
+                        <div class="filterContainerItem">
+                            <span class="toggleMenuName"><img class="rotate" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">Цена</span>
+                            <div id="toogleMenu-box">
+                                <div class="range_container">
+                                    <div class="form_control">
+                                        <div class="form_control_container">
+                                            <input class="form_control_container__time__input" type="number" id="fromInput" value="0" min="0" max="500000"/>
+                                          </div>
+                                          <div class="form_control_container">
+                                            <input class="form_control_container__time__input" type="number" id="toInput" value="500000" min="0" max="500000"/>
+                                          </div>
+                                      </div>
+                                      <div class="sliders_control">
+                                       <input id="fromSlider" type="range" value="0" min="0" max="500000"/>
+                                       <input id="toSlider" type="range" value="500000" min="0" max="500000"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterContainerItem">
+                            <span class="toggleMenuName"><img class="rotate" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">Бренд</span>
+                            <div class="toogleMenu-box">
+                                <label class="control control-checkbox">
+                                    Bajaj
+                                    <input type="checkbox"/>
+                                <div class="control_indicator"></div>
+                                </label>
+                                <label class="control control-checkbox">
+                                    BSE
+                                    <input type="checkbox" checked="checked" />
+                                    <div class="control_indicator"></div>
+                                </label>
+                                <label class="control control-checkbox">
+                                    BRZ
+                                    <input type="checkbox"/>
+                                    <div class="control_indicator"></div>
+                                </label>
+                                <label class="control control-checkbox">
+                                    FUEGO
+                                    <input type="checkbox"/>
+                                    <div class="control_indicator"></div>
+                                </label>
+                                <label class="control control-checkbox">
+                                    GR
+                                    <input type="checkbox"/>
+                                    <div class="control_indicator"></div>
+                                </label>
+                                <label class="control control-checkbox">
+                                    GreenCamel
+                                    <input type="checkbox"/>
+                                    <div class="control_indicator"></div>
+                                </label>
+                                <label class="control control-checkbox">
+                                    Hasky
+                                    <input type="checkbox"/>
+                                    <div class="control_indicator"></div>
+                                </label> 
+                            </div>
+                        </div>
+                        <div class="filterContainerItem">
+                            <span class="toggleMenuName"><img src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">Объём</span>
+                            <div id="toogleMenu-box">
+    
+                            </div>
+                        </div>
+                        <div class="filterContainerItem">
+                            <span class="toggleMenuName"><img src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">Стартер</span>
+                            <div id="toogleMenu-box">
+    
+                            </div>
+                        </div>
+                        <div class="filterContainerItem">
+                            <span class="toggleMenuName"><img src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">Комплектация</span>
+                            <div id="toogleMenu-box">
+    
+                            </div>
+                        </div>
+                        <div class="filterContainerItem">
+                            <span class="toggleMenuName"><img src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">По возрасту</span>
+                            <div id="toogleMenu-box">
+    
+                            </div>
+                        </div>
+                        <div class="filterContainerItem">
+                            <span class="toggleMenuName"><img src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">Рычаг сцепления</span>
+                            <div id="toogleMenu-box">
+    
+                            </div>
+                        </div>
+                        <div class="filterContainerItem">
+                            <span class="toggleMenuName"><img src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">Цвет</span>
+                            <div id="toogleMenu-box">
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productsContainer">
+                        <div class="sortContainer">
+                            <span class="sort">Сортировать по:</span>
+                            <span class="sortOption">Цене<img src="./assets/templates/main/img/redTriangle.png" alt="redTriangle"></span>
+                            <span class="sortOption">Наименованию<img src="./assets/templates/main/img/redTriangle.png" alt="redTriangle"></span>
+                            <span class="sortOption">Новинкам<img src="./assets/templates/main/img/redTriangle.png" alt="redTriangle"></span>
+                            <span class="sortOption">Хиту продаж<img src="./assets/templates/main/img/redTriangle.png" alt="redTriangle"></span>
+                        </div>
+                        <div class="productsItems">
+                            <div class="productsItem">
+                                <img src="./assets/templates/main/img/productsItemImage.png" alt="productsItemImage" class="productsItemImage">
+                                <div class="productDesc">
+                                    <span class="productName">Мотоцикл Avantis А3 (CB250-F/172FMM-3A) 2022</span>
+                                    <span class="productChar"><span class="productCharName">Объем двигателя</span><br>250 см3</span>
+                                    <label class="control control-checkbox">
+                                        В наличии
+                                        <input type="checkbox" checked="checked" />
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                    <div class="productCount">
+                                        <button class="countButton">-</button>
+                                        <button class="countButton">2</button>
+                                        <button class="countButton">+</button>
+                                    </div>
+                                    <span class="productPrice">175 990 ₽</span>
+                                    <div class="buttons">Посмотреть<img src="./assets/templates/main/img/buttonArrow.svg" alt="buttonArrow"></div>
+                                </div>
+                            </div>
+                            <div class="productsItem">
+                                <img src="./assets/templates/main/img/productsItemImage.png" alt="productsItemImage" class="productsItemImage">
+                                <div class="productDesc">
+                                    <span class="productName">Мотоцикл Avantis А3 (CB250-F/172FMM-3A) 2022</span>
+                                    <span class="productChar"><span class="productCharName">Объем двигателя</span><br>250 см3</span>
+                                    <label class="control control-checkbox">
+                                        В наличии
+                                        <input type="checkbox" checked="checked" />
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                    <div class="productCount">
+                                        <button class="countButton">-</button>
+                                        <button class="countButton">2</button>
+                                        <button class="countButton">+</button>
+                                    </div>
+                                    <span class="productPrice">175 990 ₽</span>
+                                    <div class="buttons">Посмотреть<img src="./assets/templates/main/img/buttonArrow.svg" alt="buttonArrow"></div>
+                                </div>
+                            </div>
+                            <div class="productsItem">
+                                <img src="./assets/templates/main/img/productsItemImage.png" alt="productsItemImage" class="productsItemImage">
+                                <div class="productDesc">
+                                    <span class="productName">Мотоцикл Avantis А3 (CB250-F/172FMM-3A) 2022</span>
+                                    <span class="productChar"><span class="productCharName">Объем двигателя</span><br>250 см3</span>
+                                    <label class="control control-checkbox">
+                                        В наличии
+                                        <input type="checkbox" checked="checked" />
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                    <div class="productCount">
+                                        <button class="countButton">-</button>
+                                        <button class="countButton">2</button>
+                                        <button class="countButton">+</button>
+                                    </div>
+                                    <span class="productPrice">175 990 ₽</span>
+                                    <div class="buttons">Посмотреть<img src="./assets/templates/main/img/buttonArrow.svg" alt="buttonArrow"></div>
+                                </div>
+                            </div>
+                            <div class="productsItem">
+                                <img src="./assets/templates/main/img/productsItemImage.png" alt="productsItemImage" class="productsItemImage">
+                                <div class="productDesc">
+                                    <span class="productName">Мотоцикл Avantis А3 (CB250-F/172FMM-3A) 2022</span>
+                                    <span class="productChar"><span class="productCharName">Объем двигателя</span><br>250 см3</span>
+                                    <label class="control control-checkbox">
+                                        В наличии
+                                        <input type="checkbox" checked="checked" />
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                    <div class="productCount">
+                                        <button class="countButton">-</button>
+                                        <button class="countButton">2</button>
+                                        <button class="countButton">+</button>
+                                    </div>
+                                    <span class="productPrice">175 990 ₽</span>
+                                    <div class="buttons">Посмотреть<img src="./assets/templates/main/img/buttonArrow.svg" alt="buttonArrow"></div>
+                                </div>
+                            </div>
+                            <div class="productsItem">
+                                <img src="./assets/templates/main/img/productsItemImage.png" alt="productsItemImage" class="productsItemImage">
+                                <div class="productDesc">
+                                    <span class="productName">Мотоцикл Avantis А3 (CB250-F/172FMM-3A) 2022</span>
+                                    <span class="productChar"><span class="productCharName">Объем двигателя</span><br>250 см3</span>
+                                    <label class="control control-checkbox">
+                                        В наличии
+                                        <input type="checkbox" checked="checked" />
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                    <div class="productCount">
+                                        <button class="countButton">-</button>
+                                        <button class="countButton">2</button>
+                                        <button class="countButton">+</button>
+                                    </div>
+                                    <span class="productPrice">175 990 ₽</span>
+                                    <div class="buttons">Посмотреть<img src="./assets/templates/main/img/buttonArrow.svg" alt="buttonArrow"></div>
+                                </div>
+                            </div>
+                            <div class="productsItem">
+                                <img src="./assets/templates/main/img/productsItemImage.png" alt="productsItemImage" class="productsItemImage">
+                                <div class="productDesc">
+                                    <span class="productName">Мотоцикл Avantis А3 (CB250-F/172FMM-3A) 2022</span>
+                                    <span class="productChar"><span class="productCharName">Объем двигателя</span><br>250 см3</span>
+                                    <label class="control control-checkbox">
+                                        В наличии
+                                        <input type="checkbox" checked="checked" />
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                    <div class="productCount">
+                                        <button class="countButton">-</button>
+                                        <button class="countButton">2</button>
+                                        <button class="countButton">+</button>
+                                    </div>
+                                    <span class="productPrice">175 990 ₽</span>
+                                    <div class="buttons">Посмотреть<img src="./assets/templates/main/img/buttonArrow.svg" alt="buttonArrow"></div>
+                                </div>
+                            </div>
+                            <div class="productsItem">
+                                <img src="./assets/templates/main/img/productsItemImage.png" alt="productsItemImage" class="productsItemImage">
+                                <div class="productDesc">
+                                    <span class="productName">Мотоцикл Avantis А3 (CB250-F/172FMM-3A) 2022</span>
+                                    <span class="productChar"><span class="productCharName">Объем двигателя</span><br>250 см3</span>
+                                    <label class="control control-checkbox">
+                                        В наличии
+                                        <input type="checkbox" checked="checked" />
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                    <div class="productCount">
+                                        <button class="countButton">-</button>
+                                        <button class="countButton">2</button>
+                                        <button class="countButton">+</button>
+                                    </div>
+                                    <span class="productPrice">175 990 ₽</span>
+                                    <div class="buttons">Посмотреть<img src="./assets/templates/main/img/buttonArrow.svg" alt="buttonArrow"></div>
+                                </div>
+                            </div>
+                            <div class="productsItem">
+                                <img src="./assets/templates/main/img/productsItemImage.png" alt="productsItemImage" class="productsItemImage">
+                                <div class="productDesc">
+                                    <span class="productName">Мотоцикл Avantis А3 (CB250-F/172FMM-3A) 2022</span>
+                                    <span class="productChar"><span class="productCharName">Объем двигателя</span><br>250 см3</span>
+                                    <label class="control control-checkbox">
+                                        В наличии
+                                        <input type="checkbox" checked="checked" />
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                    <div class="productCount">
+                                        <button class="countButton">-</button>
+                                        <button class="countButton">2</button>
+                                        <button class="countButton">+</button>
+                                    </div>
+                                    <span class="productPrice">175 990 ₽</span>
+                                    <div class="buttons">Посмотреть<img src="./assets/templates/main/img/buttonArrow.svg" alt="buttonArrow"></div>
+                                </div>
+                            </div>
+                            <div class="productsItem">
+                                <img src="./assets/templates/main/img/productsItemImage.png" alt="productsItemImage" class="productsItemImage">
+                                <div class="productDesc">
+                                    <span class="productName">Мотоцикл Avantis А3 (CB250-F/172FMM-3A) 2022</span>
+                                    <span class="productChar"><span class="productCharName">Объем двигателя</span><br>250 см3</span>
+                                    <label class="control control-checkbox">
+                                        В наличии
+                                        <input type="checkbox" checked="checked" />
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                    <div class="productCount">
+                                        <button class="countButton">-</button>
+                                        <button class="countButton">2</button>
+                                        <button class="countButton">+</button>
+                                    </div>
+                                    <span class="productPrice">175 990 ₽</span>
+                                    <div class="buttons">Посмотреть<img src="./assets/templates/main/img/buttonArrow.svg" alt="buttonArrow"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productPages">
+                            <span>1</span>
+                            <span>2</span>
+                            <span class="selected">3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="mainWrapper">
+            <div class="footerTop">
+                <div class="leftContainer">
+                    <div class="lists">
+                        <div class="list">
+                            <span>О компании</span>
+                            <ul>
+                                <li><a href="#">Гарантия</a></li>
+                                <li><a href="#">Возврат</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Политика<br>конфиденциальности</a></li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <span>Как купить</span>
+                            <ul>
+                                <li><a href="#">Оплата</a></li>
+                                <li><a href="#">Доставка</a></li>
+                                <li><a href="#">Рассрочка</a></li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <span>Каталог</span>
+                            <ul>
+                                <li><a href="#">Акции</a></li>
+                                <li><a href="#">Квадроциклы</a></li>
+                                <li><a href="#">Водная техника</a></li>
+                                <li><a href="#">Зимняя техника</a></li>
+                                <li><a href="#">Мототехника</a></li>
+                                <li><a href="#">Экипировка</a></li>
+                            </ul>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="rightContainer">
+                    <input type="text" class="footerInput" value="Поиск">
+                </div>
+            </div>
+            <div class="footerBottom">
+                <span class="coopyright">© 2022 Мопеды.рф, Все права защищены</span>
+                <div class="footerCompanyLogo">
+                    <img src="./assets/templates/main/img/footerCompanyLogo.png" alt="footerCompanyLogo">
+                    <div class="footerLink">
+                        <a href="#">
+                            <span>oren</span>
+                            <span>studio.</span>
+                            <span>ru</span>
+                        </a>
+                    </div>
+                    <div class="footerLogoText">
+                        <a href="#">
+                            <span>под</span>
+                            <span>чуткой</span>
+                            <span>заботой</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
