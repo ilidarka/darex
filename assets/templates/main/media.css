@@ -233,4 +233,7 @@
     .cardSection .cardImage {
         width: 100% !important;
     }
+    .cardSection .buyCard {
+        align-items: center !important;
+    }
 }
