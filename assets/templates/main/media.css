@@ -338,4 +338,7 @@
     .productsSection .productsItem {
         width: 100% !important;
     }
+    .productsSection .mainWrapper {
+        padding: 0 10px;
+    }
 }
