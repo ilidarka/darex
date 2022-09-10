@@ -237,3 +237,43 @@
         align-items: center !important;
     }
 }
+
+
+
+/*order.html media*/
+@media (max-width: 1200px) {
+    .breadcrumbs .mainWrapper, .orderSection .mainWrapper, .totalSection .mainWrapper {
+        padding: 0 10px;
+    }
+}
+@media (max-width: 765px) {
+    .orderSection .orderItem {
+        width: 60% !important;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .orderSection .orderItemImage {
+        width: 100%;
+    }
+    .orderSection .orderName {
+        width: 100% !important;
+        text-align: center;
+    }
+    .totalSection .mainWrapper {
+        justify-content: center;
+    }
+}
+@media (max-width: 360px) {
+    .totalSection .mainWrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px !important;
+    }
+    .totalSection .buttons {
+        margin-left: 0 !important;
+    }
+    .orderSection .orderItem {
+        width: 100% !important;
+    }
+}

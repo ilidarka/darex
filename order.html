@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/templates/main/style.css">
+    <link rel="stylesheet" href="./assets/templates/main/media.css">
+    <link rel="stylesheet" href="./assets/templates/main/burgerStyle.css">
+    <link rel="stylesheet" href="./assets/templates/main/orderStyle.css">
+    <link rel="stylesheet" href="./assets/templates/main/checkBoxStyle.css">
+    <script src="./assets/js/script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="#">Квадроциклы</a></li>
+                <li><a class="selected" href="#">Водная техника</a></li>
+                <li><a href="#">Зимняя техника</a></li>
+                <li><a href="#">Мототехника</a></li>
+                <li><a href="#">Экипировка</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Рассрочка</a></li>
+                <li><a href="#">Контакты</a></li>
+           </ul>
+        </nav> 
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
+    <header>
+        <div class="mainWrapper">
+            <div class="headerContainer">
+                <img src="./assets/templates/main/img/logoImage.png" alt="logoImage">
+                <div class="headerTopBottom">
+                    <div class="headerTop">
+                        <div class="city">
+                            <img src="./assets/templates/main/img/landmark.svg" alt="landmark">
+                            <span>Ваш город: <span class="colored">Оренбург</span></span>
+                        </div>
+                        <div class="signIn">
+                            <img src="./assets/templates/main/img/singin.svg" alt="signIn">
+                            <span>Войти</span>
+                        </div>
+                    </div>
+                    <div class="headerBottom">
+                        <span class="headerText">Территория<br>активоного отдыха</span>
+                        <input class="signInInput" type="text" value="Поиск">
+                        <img src="./assets/templates/main/img/cart.svg" alt="cart">
+                        <div class="requestCall">
+                            <div class="number">
+                                <img src="./assets/templates/main/img/phone.svg" alt="phone">
+                                <span>+7 (843) 204-06-73</span>
+                            </div>
+                            <a class="phoneLink" href="tel:78432040673">Заказать звонок</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headerNavBar">
+            <div class="mainWrapper">
+                <nav>
+                    <li><a href="#">Квадроциклы</a></li>
+                    <li><a class="selected" href="#">Водная техника</a></li>
+                    <li><a href="#">Зимняя техника</a></li>
+                    <li><a href="#">Мототехника</a></li>
+                    <li><a href="#">Экипировка</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Рассрочка</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="breadcrumbs">
+            <div class="mainWrapper">
+                <ul>
+                    <li><a href="index.html">Главная /</a></li>
+                    <li><a href="#" class="selectedbreadcrumb">Карточка товара</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="orderSection">
+            <div class="mainWrapper">
+                <h3>в корзине 2 товара</h3>
+                <div class="orderItems">
+                    <div class="orderItem">
+                        <img class="orderItemImage" src="./assets/templates/main/img/orderItemImage.png" alt="orderItemImage">
+                        <span class="orderName">Мотоцикл Avantis A5 Motard (PR250/172FMM-5) 2022 ПТС</span>
+                        <div class="cardCount">
+                            <button class="countButton">-</button>
+                            <button class="countButton">2</button>
+                            <button class="countButton">+</button>
+                        </div>
+                        <span class="cardPrice">175 990 ₽</span>
+                        <span class="deleteButton">&times;</span>
+                    </div>
+                    <div class="orderItem">
+                        <img class="orderItemImage" src="./assets/templates/main/img/orderItemImage.png" alt="orderItemImage">
+                        <span class="orderName">Мотоцикл Avantis A5 Motard (PR250/172FMM-5) 2022 ПТС</span>
+                        <div class="cardCount">
+                            <button class="countButton">-</button>
+                            <button class="countButton">2</button>
+                            <button class="countButton">+</button>
+                        </div>
+                        <span class="cardPrice">175 990 ₽</span>
+                        <span class="deleteButton">&times;</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="totalSection">
+            <div class="mainWrapper">
+                <span>Итого:</span>
+                <span>350 000 Р.</span>
+                <div class="buttons">Оформить заказ<img src="./assets/templates/main/img/buttonArrow.svg" alt="buttonArrow"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="mainWrapper">
+            <div class="footerTop">
+                <div class="leftContainer">
+                    <div class="lists">
+                        <div class="list">
+                            <span>О компании</span>
+                            <ul>
+                                <li><a href="#">Гарантия</a></li>
+                                <li><a href="#">Возврат</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Политика<br>конфиденциальности</a></li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <span>Как купить</span>
+                            <ul>
+                                <li><a href="#">Оплата</a></li>
+                                <li><a href="#">Доставка</a></li>
+                                <li><a href="#">Рассрочка</a></li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <span>Каталог</span>
+                            <ul>
+                                <li><a href="#">Акции</a></li>
+                                <li><a href="#">Квадроциклы</a></li>
+                                <li><a href="#">Водная техника</a></li>
+                                <li><a href="#">Зимняя техника</a></li>
+                                <li><a href="#">Мототехника</a></li>
+                                <li><a href="#">Экипировка</a></li>
+                            </ul>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="rightContainer">
+                    <input type="text" class="footerInput" value="Поиск">
+                </div>
+            </div>
+            <div class="footerBottom">
+                <span class="coopyright">© 2022 Мопеды.рф, Все права защищены</span>
+                <div class="footerCompanyLogo">
+                    <img src="./assets/templates/main/img/footerCompanyLogo.png" alt="footerCompanyLogo">
+                    <div class="footerLink">
+                        <a href="#">
+                            <span>oren</span>
+                            <span>studio.</span>
+                            <span>ru</span>
+                        </a>
+                    </div>
+                    <div class="footerLogoText">
+                        <a href="#">
+                            <span>под</span>
+                            <span>чуткой</span>
+                            <span>заботой</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
