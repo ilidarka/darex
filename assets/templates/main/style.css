@@ -75,6 +75,12 @@ header .mainWrapper {
     gap: 8px;
     margin-left: 24px;
 }
+.headerTop .signIn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
 .headerBottom {
     width: 100%;
     display: flex;
@@ -126,6 +132,21 @@ header .phoneLink {
     line-height: 18px;
     text-align: right;
     text-decoration-line: underline;
+}
+header .shoppingCart {
+    position: relative;
+}
+header .cartNumber {
+    position: absolute;
+    bottom: 23px;
+    left: 22px;
+    width: 24px;
+    height: 24px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .headerNavBar {
     width: 100%;

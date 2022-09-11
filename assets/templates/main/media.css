@@ -175,6 +175,10 @@
     }
 }
 @media (max-width: 360px) {
+    header .requestCall {
+        align-items: center;
+        gap: 20px;
+    }
     .newsSection .mainWrapper {
         padding: 0 25px;
     }
@@ -228,13 +232,17 @@
 }
 @media (max-width: 360px) {
     .cardSection .mainWrapper {
-        background-position-y: 17% !important;
+        background-position-y: 21% !important;
     }
     .cardSection .cardImage {
         width: 100% !important;
     }
     .cardSection .buyCard {
         align-items: center !important;
+    }
+    .additionalInfoSection .infoLinks ul {
+        width: 100% !important;
+        gap: 15px;
     }
 }
 

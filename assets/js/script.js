@@ -6,6 +6,24 @@ function menuOnClick() {
     document.getElementById("menu-bg").classList.toggle("change-bg");
 };
 
+//switch tab on card page
+function switchTab(evt, tabNumber) {
+    let i, tabContent, tabLinks;
+
+    tabContent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabContent.length; i++) {
+        tabContent[i].style.display = "none";
+    }
+
+    tabLinks = document.getElementsByClassName("tab");
+    for (i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].className = tabLinks[i].className.replace(" selectedTab", "");
+    }
+
+    document.getElementById(tabNumber).style.display = "flex";
+    evt.currentTarget.className += " selectedTab";
+}
+
 //double range script
 function controlFromInput(fromSlider, fromInput, toInput, controlSlider) {
     const [from, to] = getParsed(fromInput, toInput);

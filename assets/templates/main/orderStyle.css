@@ -36,6 +36,13 @@
     align-items: center;
     padding: 19px 30px 36px 43px;
 }
+.orderSection .orderItem a {
+    text-decoration: none;
+    color: #323232;
+}
+.orderSection .orderItem a:checked {
+    color: #323232;
+}
 .orderSection .orderName {
     width: 35%;
     font-weight: 700;
@@ -69,8 +76,12 @@
 }
 .totalSection .mainWrapper {
     margin-top: 30px;
+    margin-bottom: 30px;
     align-items: center;
     gap: 10px;
+}
+.totalSection a {
+    text-decoration: none;
 }
 .totalSection .buttons {
     margin-left: 30px;

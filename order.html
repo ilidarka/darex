@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="./assets/templates/main/style.css">
     <link rel="stylesheet" href="./assets/templates/main/media.css">
     <link rel="stylesheet" href="./assets/templates/main/burgerStyle.css">
@@ -54,7 +52,12 @@
                     <div class="headerBottom">
                         <span class="headerText">Территория<br>активоного отдыха</span>
                         <input class="signInInput" type="text" value="Поиск">
-                        <img src="./assets/templates/main/img/cart.svg" alt="cart">
+                        <div class="shoppingCart">
+                            <img src="./assets/templates/main/img/cart.svg" alt="cart">
+                            <div class="cartNumber">
+                                <span>1</span>
+                            </div>
+                        </div>
                         <div class="requestCall">
                             <div class="number">
                                 <img src="./assets/templates/main/img/phone.svg" alt="phone">
@@ -96,7 +99,7 @@
                 <div class="orderItems">
                     <div class="orderItem">
                         <img class="orderItemImage" src="./assets/templates/main/img/orderItemImage.png" alt="orderItemImage">
-                        <span class="orderName">Мотоцикл Avantis A5 Motard (PR250/172FMM-5) 2022 ПТС</span>
+                        <span class="orderName"><a href="#">Мотоцикл Avantis A5 Motard (PR250/172FMM-5) 2022 ПТС</a></span>
                         <div class="cardCount">
                             <button class="countButton">-</button>
                             <button class="countButton">2</button>
@@ -107,7 +110,7 @@
                     </div>
                     <div class="orderItem">
                         <img class="orderItemImage" src="./assets/templates/main/img/orderItemImage.png" alt="orderItemImage">
-                        <span class="orderName">Мотоцикл Avantis A5 Motard (PR250/172FMM-5) 2022 ПТС</span>
+                        <span class="orderName"><a href="#">Мотоцикл Avantis A5 Motard (PR250/172FMM-5) 2022 ПТС</a></span>
                         <div class="cardCount">
                             <button class="countButton">-</button>
                             <button class="countButton">2</button>
@@ -123,7 +126,7 @@
             <div class="mainWrapper">
                 <span>Итого:</span>
                 <span>350 000 Р.</span>
-                <div class="buttons">Оформить заказ<img src="./assets/templates/main/img/buttonArrow.svg" alt="buttonArrow"></div>
+                <a href="#"><div class="buttons">Оформить заказ<img src="./assets/templates/main/img/buttonArrow.svg" alt="buttonArrow"></div></a>
             </div>
         </section>
     </main>

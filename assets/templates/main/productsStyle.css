@@ -105,6 +105,18 @@
     align-items: flex-start;
     gap: 10px;
 }
+.productsSection .checked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.productsSection .checked span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    color: #323232;
+}
 .productsSection .productsItemImage {
     width: 100%;
 }
@@ -157,11 +169,16 @@
     align-items: center;
     gap: 10px;
 }
+.productsSection .productsItem a {
+    text-decoration: none;
+    color: 000;
+}
 .productsSection .productDesc {
     padding-left: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 10px;
 }
 .productsSection .productPages {

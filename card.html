@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="./assets/templates/main/style.css">
     <link rel="stylesheet" href="./assets/templates/main/media.css">
     <link rel="stylesheet" href="./assets/templates/main/burgerStyle.css">
@@ -54,7 +52,12 @@
                     <div class="headerBottom">
                         <span class="headerText">Территория<br>активоного отдыха</span>
                         <input class="signInInput" type="text" value="Поиск">
-                        <img src="./assets/templates/main/img/cart.svg" alt="cart">
+                        <div class="shoppingCart">
+                            <img src="./assets/templates/main/img/cart.svg" alt="cart">
+                            <div class="cartNumber">
+                                <span>1</span>
+                            </div>
+                        </div>
                         <div class="requestCall">
                             <div class="number">
                                 <img src="./assets/templates/main/img/phone.svg" alt="phone">
@@ -96,25 +99,26 @@
                 <div class="cardContainer">
                     <img class="cardImage" src="./assets/templates/main/img/cardImage.png" alt="cardImage">
                     <div class="cardInfo">
-                        <span><span class="name">Производитель</span>_ _ _ _ _ _ _ _ _ _ _Avantis</span>
-                        <span><span class="name">Длина</span>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _2010</span>
-                        <span><span class="name">Ширина</span>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _820</span>
-                        <span><span class="name">Обьем двигателя (см3)</span>_ _ _ _ _ _249,9</span>
-                        <span><span class="name">Страна производитель</span>_ _ _ _ _ _Китай</span>
+                        <ul class="cardInfoList">
+                            <li><span class="name">Производитель</span><span class="separator"></span><span class="val">Avantis</span></li>
+                            <li><span class="name">Длина</span><span class="separator"></span><span class="val">2010</span></li>
+                            <li><span class="name">Ширина</span><span class="separator"></span><span class="val">820</span></li>
+                            <li><span class="name">Обьем двигателя (см3)</span><span class="separator"></span><span class="val">249,9</span></li>
+                            <li><span class="name">Страна производитель</span><span class="separator"></span><span class="val">Китай</span></li>
+                         </ul>
                     </div>
                     <div class="buyCard">
                         <span class="cardPrice">175 990 ₽</span>
-                        <label class="control control-checkbox">
-                                В наличии
-                                <input type="checkbox" checked="checked" />
-                            <div class="control_indicator"></div>
-                        </label>
+                        <div class="checked">
+                            <img src="./assets/templates/main/img/checkedIcon.svg" alt="checkedIcon">
+                            <span>В наличии</span>
+                        </div>
                         <div class="cardCount">
                             <button class="countButton">-</button>
                             <button class="countButton">2</button>
                             <button class="countButton">+</button>
                         </div>
-                        <div class="buttons">Купить<img src="./assets/templates/main/img/buttonArrow.svg" alt="buttonArrow"></div>
+                        <a href="#"><div class="buttons">Купить<img src="./assets/templates/main/img/buttonArrow.svg" alt="buttonArrow"></div></a>
                     </div>
                 </div>
             </div>
@@ -123,39 +127,47 @@
             <div class="mainWrapper">
                 <div class="infoLinks">
                     <ul>
-                        <li class="selected">Описание</li>
-                        <li>Характеристики</li>
-                        <li>Доставка и оплата</li>
+                        <li class="tab selectedTab" onclick="switchTab(event, 'first')">Описание</li>
+                        <li class="tab" onclick="switchTab(event, 'second')">Характеристики</li>
+                        <li class="tab" onclick="switchTab(event, 'third')">Доставка и оплата</li>
                     </ul>
                 </div>
                 <div class="info">
-                    <span>Дополнительные характеристики:</span>
-                    <ul>
-                        <li>Выхлопная система из нержавеющей стали, диаметр 35мм,</li>
-                        <li>защитный экран приемной трубы,</li>
-                        <li>установлен Powerbomb, прямоток алюминиевый;</li>
-                        <li>рама стальная,</li>
-                        <li>ширина несущей части рамы 57мм, 2 слоя покрытия краски, прогрессия алюминиевая на игольчатых подшипниках;</li>
-                        <li>цепной привод натяжной механизм алюминиевый, соотношение звезд 13 х 43, ведущая звезда крепится на 2-х болтах, шлицевая посадка, ведомая на 6-ти точках крепления к ступице;</li>
-                        <li>ловушка цепи алюминиевая</li>
-                        <li>с пластиковым вкладышем, слайдер цепи пластиковый;</li>
-                        <li>передняя подвеска телескопическая вилка перевернутого типа, диаметр штока 41мм, рабочий ход - 263мм, длина переднего амортизатора 885мм;</li>
-                        <li>задняя подвеска маятниковая</li>
-                        <li>с моноамортизатором, диаметр штока 16мм, рабочий ход задней - 255мм, длина моноамортизатора 460мм;</li>
-                        <li>защита штоков передних амортизаторов, брызговик моноамортизатора;</li>
-                        <li>шины Yuanxing, установлены буксаторы, обода алюминиевые, полноразмерные наклейки;</li>
-                        <li>тормоза гидравлические</li>
-                        <li>с армированными тормозными шлангами, тормозные диски перфорированные, диаметр переднего 265мм, заднего 220мм, крепятся на 6-ти точках к ступице;</li>
-                        <li>стальная педаль тормоза</li>
-                        <li>не складная, правильной формы с регулировкой свободного хода;</li>
-                        <li>воздушный фильтрующий элемент бумажный, не обслуживаемый;</li>
-                        <li>руль алюминиевый Fatbar,</li>
-                        <li>переменного сечения 28/22мм, ручка газа короткоходная, рычаги управления алюминиевые не складные, грипсы резиновые;</li>
-                        <li>сидение влагостойкое, антискользящее, пупырчатое с дополнительными продольными линиями, длина подушки 715мм;</li>
-                        <li>высота от подножки до сидения 560 мм;</li>
-                        <li>расстояние от центра подножки до, передней оси/задней оси 875/540 мм;</li>
-                        <li>ширина по подножкам водителя 510 мм.</li>
-                    </ul>
+                    <div id="first" class="tabContent selectedContent">
+                        <span>Дополнительные характеристики:</span>
+                        <ul>
+                            <li>Выхлопная система из нержавеющей стали, диаметр 35мм,</li>
+                            <li>защитный экран приемной трубы,</li>
+                            <li>установлен Powerbomb, прямоток алюминиевый;</li>
+                            <li>рама стальная,</li>
+                            <li>ширина несущей части рамы 57мм, 2 слоя покрытия краски, прогрессия алюминиевая на игольчатых подшипниках;</li>
+                            <li>цепной привод натяжной механизм алюминиевый, соотношение звезд 13 х 43, ведущая звезда крепится на 2-х болтах, шлицевая посадка, ведомая на 6-ти точках крепления к ступице;</li>
+                            <li>ловушка цепи алюминиевая</li>
+                            <li>с пластиковым вкладышем, слайдер цепи пластиковый;</li>
+                            <li>передняя подвеска телескопическая вилка перевернутого типа, диаметр штока 41мм, рабочий ход - 263мм, длина переднего амортизатора 885мм;</li>
+                            <li>задняя подвеска маятниковая</li>
+                            <li>с моноамортизатором, диаметр штока 16мм, рабочий ход задней - 255мм, длина моноамортизатора 460мм;</li>
+                            <li>защита штоков передних амортизаторов, брызговик моноамортизатора;</li>
+                            <li>шины Yuanxing, установлены буксаторы, обода алюминиевые, полноразмерные наклейки;</li>
+                            <li>тормоза гидравлические</li>
+                            <li>с армированными тормозными шлангами, тормозные диски перфорированные, диаметр переднего 265мм, заднего 220мм, крепятся на 6-ти точках к ступице;</li>
+                            <li>стальная педаль тормоза</li>
+                            <li>не складная, правильной формы с регулировкой свободного хода;</li>
+                            <li>воздушный фильтрующий элемент бумажный, не обслуживаемый;</li>
+                            <li>руль алюминиевый Fatbar,</li>
+                            <li>переменного сечения 28/22мм, ручка газа короткоходная, рычаги управления алюминиевые не складные, грипсы резиновые;</li>
+                            <li>сидение влагостойкое, антискользящее, пупырчатое с дополнительными продольными линиями, длина подушки 715мм;</li>
+                            <li>высота от подножки до сидения 560 мм;</li>
+                            <li>расстояние от центра подножки до, передней оси/задней оси 875/540 мм;</li>
+                            <li>ширина по подножкам водителя 510 мм.</li>
+                        </ul>
+                    </div>
+                    <div id="second" class="tabContent">
+                        <span>Характеристики</span>
+                    </div>
+                    <div id="third" class="tabContent">
+                        <span>Доставка и оплата</span>
+                    </div>
                 </div>
             </div>
         </section>
