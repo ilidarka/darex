@@ -48,6 +48,9 @@
     flex-direction: column;
     gap: 20px;
 }
+.productsSection .toogleMenu-box {
+    display: none;
+}
 .productsSection .toggleMenuName {
     display: flex;
     align-items: center;

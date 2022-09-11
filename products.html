@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./assets/templates/main/checkBoxStyle.css">
     <link rel="stylesheet" href="./assets/templates/main/rangeStyle.css">
     <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/filter.js" defer></script>
+    <script src="./assets/js/sortScript.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -100,8 +102,8 @@
                 <div class="container">
                     <div class="filterContainer">
                         <div class="filterContainerItem">
-                            <span class="toggleMenuName"><img class="rotate" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">Цена</span>
-                            <div id="toogleMenu-box">
+                            <span class="toggleMenuName" onclick="toggleMenu(event, 'price')" ><img class="toggleMenuTriangle" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">Цена</span>
+                            <div id="price" class="toogleMenu-box">
                                 <div class="range_container">
                                     <div class="form_control">
                                         <div class="form_control_container">
@@ -119,8 +121,8 @@
                             </div>
                         </div>
                         <div class="filterContainerItem">
-                            <span class="toggleMenuName"><img class="rotate" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">Бренд</span>
-                            <div class="toogleMenu-box">
+                            <span class="toggleMenuName" onclick="toggleMenu(event, 'brand')" ><img class="toggleMenuTriangle" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">Бренд</span>
+                            <div id="brand" class="toogleMenu-box">
                                 <label class="control control-checkbox">
                                     Bajaj
                                     <input type="checkbox"/>
@@ -159,38 +161,38 @@
                             </div>
                         </div>
                         <div class="filterContainerItem">
-                            <span class="toggleMenuName"><img src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">Объём</span>
-                            <div id="toogleMenu-box">
+                            <span class="toggleMenuName" onclick="toggleMenu(event, 'volume')" ><img class="toggleMenuTriangle" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">Объём</span>
+                            <div id="volume" class="toogleMenu-box">
     
                             </div>
                         </div>
                         <div class="filterContainerItem">
-                            <span class="toggleMenuName"><img src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">Стартер</span>
-                            <div id="toogleMenu-box">
+                            <span class="toggleMenuName" onclick="toggleMenu(event, 'start')" ><img class="toggleMenuTriangle" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">Стартер</span>
+                            <div id="start" class="toogleMenu-box">
     
                             </div>
                         </div>
                         <div class="filterContainerItem">
-                            <span class="toggleMenuName"><img src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">Комплектация</span>
-                            <div id="toogleMenu-box">
+                            <span class="toggleMenuName" onclick="toggleMenu(event, 'compl')" ><img class="toggleMenuTriangle" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">Комплектация</span>
+                            <div id="compl" class="toogleMenu-box">
     
                             </div>
                         </div>
                         <div class="filterContainerItem">
-                            <span class="toggleMenuName"><img src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">По возрасту</span>
-                            <div id="toogleMenu-box">
+                            <span class="toggleMenuName" onclick="toggleMenu(event, 'age')" ><img class="toggleMenuTriangle" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">По возрасту</span>
+                            <div id="age" class="toogleMenu-box">
     
                             </div>
                         </div>
                         <div class="filterContainerItem">
-                            <span class="toggleMenuName"><img src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">Рычаг сцепления</span>
-                            <div id="toogleMenu-box">
+                            <span class="toggleMenuName" onclick="toggleMenu(event, 'lever')" ><img class="toggleMenuTriangle" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">Рычаг сцепления</span>
+                            <div id="lever" class="toogleMenu-box">
     
                             </div>
                         </div>
                         <div class="filterContainerItem">
-                            <span class="toggleMenuName"><img src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">Цвет</span>
-                            <div id="toogleMenu-box">
+                            <span class="toggleMenuName" onclick="toggleMenu(event, 'color')" ><img class="toggleMenuTriangle" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">Цвет</span>
+                            <div id="color" class="toogleMenu-box">
     
                             </div>
                         </div>
@@ -198,10 +200,10 @@
                     <div class="productsContainer">
                         <div class="sortContainer">
                             <span class="sort">Сортировать по:</span>
-                            <span class="sortOption">Цене<img src="./assets/templates/main/img/redTriangle.png" alt="redTriangle"></span>
-                            <span class="sortOption">Наименованию<img src="./assets/templates/main/img/redTriangle.png" alt="redTriangle"></span>
-                            <span class="sortOption">Новинкам<img src="./assets/templates/main/img/redTriangle.png" alt="redTriangle"></span>
-                            <span class="sortOption">Хиту продаж<img src="./assets/templates/main/img/redTriangle.png" alt="redTriangle"></span>
+                            <span class="sortOption" onclick="sort(event, 'sortPrice')" >Цене<img class="toggleMenuTriangle" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle"></span>
+                            <span class="sortOption" onclick="sort(event, 'sortName')" >Наименованию<img class="toggleMenuTriangle" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle"></span>
+                            <span class="sortOption" onclick="sort(event, 'sortNew')" >Новинкам<img class="toggleMenuTriangle" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle"></span>
+                            <span class="sortOption" onclick="sort(event, 'sortHits')" >Хиту продаж<img class="toggleMenuTriangle" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle"></span>
                         </div>
                         <div class="productsItems">
                             <div class="productsItem">
