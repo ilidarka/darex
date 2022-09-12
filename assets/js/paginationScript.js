@@ -2,8 +2,8 @@ function changePage(event) {
     let pageNumbers = document.querySelector(".productPages").childNodes;
     pageNumbers.forEach((elem) => {
         if(elem.nodeName != "#text") {
-            elem.classList.remove("selected");
+            elem.classList.remove("selectedPage");
         }
     });
-    event.currentTarget.classList.add("selected");
+    event.currentTarget.classList.add("selectedPage");
 }

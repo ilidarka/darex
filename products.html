@@ -382,7 +382,7 @@
                         <div class="productPages">
                             <span onclick="changePage(event)">1</span>
                             <span onclick="changePage(event)">2</span>
-                            <span class="selected" onclick="changePage(event)">3</span>
+                            <span class="selectedPage" onclick="changePage(event)">3</span>
                         </div>
                     </div>
                 </div>
@@ -395,8 +395,8 @@
                 <div class="leftContainer">
                     <div class="lists">
                         <div class="list">
-                            <span>О компании</span>
-                            <ul>
+                            <span onclick="toggleFooterMenu(event, 'company')">О компании</span>
+                            <ul id="company" class="footerMenuBox">
                                 <li><a href="#">Гарантия</a></li>
                                 <li><a href="#">Возврат</a></li>
                                 <li><a href="#">Новости</a></li>
@@ -404,16 +404,16 @@
                             </ul>
                         </div>
                         <div class="list">
-                            <span>Как купить</span>
-                            <ul>
+                            <span onclick="toggleFooterMenu(event, 'buy')">Как купить</span>
+                            <ul id="buy" class="footerMenuBox">
                                 <li><a href="#">Оплата</a></li>
                                 <li><a href="#">Доставка</a></li>
                                 <li><a href="#">Рассрочка</a></li>
                             </ul>
                         </div>
                         <div class="list">
-                            <span>Каталог</span>
-                            <ul>
+                            <span onclick="toggleFooterMenu(event, 'catalog')">Каталог</span>
+                            <ul id="catalog" class="footerMenuBox">
                                 <li><a href="#">Акции</a></li>
                                 <li><a href="#">Квадроциклы</a></li>
                                 <li><a href="#">Водная техника</a></li>

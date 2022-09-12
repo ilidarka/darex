@@ -506,7 +506,7 @@ header .cartNumber {
     line-height: 150%;
     text-transform: uppercase;
     color: #323232;
-    padding: 15px 0 0 12px;
+    padding: 15px 10px 0 12px;
 }
 .newsSection .newsDesc {
     font-weight: 400;
@@ -610,6 +610,13 @@ footer .footerTop .lists {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 15px;
+}
+footer .footerTop .list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 footer .footerTop .list span {
     font-weight: 700;
@@ -696,4 +703,7 @@ footer .footerCompanyLogo a {
 }
 footer .footerCompanyLogo img {
     padding-right: 20px;
+}
+a:hover {
+    cursor: pointer;
 }

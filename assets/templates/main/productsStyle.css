@@ -81,7 +81,7 @@
     margin-top: 20px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 10px;
 }
@@ -203,7 +203,7 @@
     align-items: center;
     gap: 20px;
 }
-.selected {
+.selectedPage {
     color: #13b83a !important;
 }
 .showFilterButton {
