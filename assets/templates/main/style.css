@@ -664,7 +664,7 @@ footer .footerBottom .coopyright {
 footer .footerCompanyLogo {
     display: flex;
     justify-content: center;
-    padding: 24px 14px;
+    padding: 24px 0 24px 14px;
 }
 footer .footerCompanyLogo .footerLink a {
     display: flex;
