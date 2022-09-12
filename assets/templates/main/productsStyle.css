@@ -203,8 +203,15 @@
     align-items: center;
     gap: 20px;
 }
+.productsSection .productPages a {
+    text-decoration: none;
+    color: #000;
+}
+.productsSection .productPages a:checked {
+    color: #000;
+}
 .selected {
-    color: #186329 !important;
+    color: #13b83a !important;
 }
 .showFilterButton {
     width: 80px;
