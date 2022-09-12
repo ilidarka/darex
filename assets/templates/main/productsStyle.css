@@ -42,10 +42,6 @@
     flex-direction: column;
     gap: 30px;
 }
-.productsSection .filterContainerAbsolute {
-    position: absolute;
-    top: 90vh;
-}
 .productsSection .filterContainerItem {
     width: 100%;
     display: flex;
@@ -222,4 +218,8 @@
 }
 .showFilterButton img {
     width: 25%;
+}
+.closeFilter {
+    display: none;
+    font-size: 30px;
 }

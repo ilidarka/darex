@@ -320,6 +320,12 @@
 @media (max-width: 720px) {
     .productsSection .filterContainer {
         display: none;
+        position: fixed;
+        width: 90%;
+        top: 60px;
+    }
+    .productsSection .closeFilter {
+        display: block;
     }
     .productsSection .showFilterButton {
         display: flex;
@@ -335,9 +341,6 @@
 @media (max-width: 652px) {
     .productsSection .productsItem {
         width: 45% !important;
-    }
-    .productsSection .filterContainer {
-        width: 40% !important;
     }
     input[type="number"] {
         width: 60px !important;

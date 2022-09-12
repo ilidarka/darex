@@ -100,7 +100,10 @@
             <div class="mainWrapper">
                 <h3>Мотоциклы</h3>
                 <div class="container">
-                    <div class="filterContainer filterContainerAbsolute">
+                    <div class="filterContainer">
+                        <div class="filterCloseButton">
+                            <span class="closeFilter" onclick="showFilter()">&times;</span>
+                        </div>
                         <div class="filterContainerItem">
                             <span class="toggleMenuName" onclick="toggleMenu(event, 'price')" ><img class="toggleMenuTriangle" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">Цена</span>
                             <div id="price" class="toogleMenu-box">
