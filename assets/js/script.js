@@ -6,6 +6,18 @@ function menuOnClick() {
     document.getElementById("menu-bg").classList.toggle("change-bg");
 };
 
+//add / remove item script
+function addItem() {
+    if(document.querySelector(".cardCount") != null) {
+        document.querySelector(".cardCount").childNodes[3].innerHTML++;
+    }
+};
+function removeItem() {
+    if(!(document.querySelector(".cardCount").childNodes[3].innerHTML <= 0)) {
+        document.querySelector(".cardCount").childNodes[3].innerHTML--;
+    }
+};
+
 //switch tab on card page
 function switchTab(evt, tabNumber) {
     let i, tabContent, tabLinks;
