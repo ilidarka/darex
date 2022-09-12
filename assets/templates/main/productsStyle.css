@@ -42,6 +42,10 @@
     flex-direction: column;
     gap: 30px;
 }
+.productsSection .filterContainerAbsolute {
+    position: absolute;
+    top: 90vh;
+}
 .productsSection .filterContainerItem {
     width: 100%;
     display: flex;
@@ -75,7 +79,15 @@
 .productsSection .sortContainer {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+}
+.productsSection .sortOptions {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 .productsSection .sort {
     font-weight: 400;
@@ -174,7 +186,10 @@
 }
 .productsSection .productsItem a {
     text-decoration: none;
-    color: 000;
+    color: #000;
+}
+.productsSection .productsItem a:checked {
+    color: #000;
 }
 .productsSection .productDesc {
     padding-left: 20px;
@@ -194,4 +209,17 @@
 }
 .selected {
     color: #186329 !important;
+}
+.showFilterButton {
+    width: 80px;
+    height: 25px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #fff;
+    gap: 10px;
+}
+.showFilterButton img {
+    width: 25%;
 }

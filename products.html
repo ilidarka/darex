@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="./assets/templates/main/style.css">
-    <link rel="stylesheet" href="./assets/templates/main/media.css">
     <link rel="stylesheet" href="./assets/templates/main/burgerStyle.css">
     <link rel="stylesheet" href="./assets/templates/main/productsStyle.css">
     <link rel="stylesheet" href="./assets/templates/main/checkBoxStyle.css">
     <link rel="stylesheet" href="./assets/templates/main/rangeStyle.css">
+    <link rel="stylesheet" href="./assets/templates/main/media.css">
     <script src="./assets/js/script.js" defer></script>
     <script src="./assets/js/filter.js" defer></script>
     <script src="./assets/js/sortScript.js" defer></script>
@@ -100,7 +100,7 @@
             <div class="mainWrapper">
                 <h3>Мотоциклы</h3>
                 <div class="container">
-                    <div class="filterContainer">
+                    <div class="filterContainer filterContainerAbsolute">
                         <div class="filterContainerItem">
                             <span class="toggleMenuName" onclick="toggleMenu(event, 'price')" ><img class="toggleMenuTriangle" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle">Цена</span>
                             <div id="price" class="toogleMenu-box">
@@ -198,12 +198,18 @@
                         </div>
                     </div>
                     <div class="productsContainer">
+
                         <div class="sortContainer">
-                            <span class="sort">Сортировать по:</span>
-                            <span class="sortOption" onclick="sort(event, 'sortPrice')" >Цене<img class="toggleMenuTriangle" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle"></span>
-                            <span class="sortOption" onclick="sort(event, 'sortName')" >Наименованию<img class="toggleMenuTriangle" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle"></span>
-                            <span class="sortOption" onclick="sort(event, 'sortNew')" >Новинкам<img class="toggleMenuTriangle" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle"></span>
-                            <span class="sortOption" onclick="sort(event, 'sortHits')" >Хиту продаж<img class="toggleMenuTriangle" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle"></span>
+                            <div class="filterButton">
+                                <button class="showFilterButton" onclick="showFilter()"><img src="./assets/templates/main/img/filter.png" alt="filter">Фильтр</button>
+                            </div>                            
+                            <div class="sortOptions">
+                                <span class="sort">Сортировать по:</span>
+                                <span class="sortOption" onclick="sort(event, 'sortPrice')" >Цене<img class="toggleMenuTriangle" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle"></span>
+                                <span class="sortOption" onclick="sort(event, 'sortName')" >Наименованию<img class="toggleMenuTriangle" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle"></span>
+                                <span class="sortOption" onclick="sort(event, 'sortNew')" >Новинкам<img class="toggleMenuTriangle" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle"></span>
+                                <span class="sortOption" onclick="sort(event, 'sortHits')" >Хиту продаж<img class="toggleMenuTriangle" src="./assets/templates/main/img/redTriangle.png" alt="redTriangle"></span>
+                            </div>
                         </div>
                         <div class="productsItems">
                             <div class="productsItem">

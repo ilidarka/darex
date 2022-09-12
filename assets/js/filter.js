@@ -11,3 +11,23 @@ function toggleMenu(event, menuBoxName) {
         currentMenuBox.style.display = "block";
     }
 };
+
+function showFilter() {
+    let filterMenu = document.querySelector(".filterContainer");
+    if(filterMenu.style.display === "flex") {
+        filterMenu.style.display = "none";
+    } else {
+        filterMenu.style.display = "flex";
+    }
+};
+
+function resizeFunction() {
+    let filterMenu = document.querySelector(".filterContainer");
+    if (document.documentElement.clientWidth > 720) {
+        filterMenu.style.display = "flex";
+    } else {
+        filterMenu.style.display = "none";
+    }
+}
+
+window.addEventListener('resize', resizeFunction);

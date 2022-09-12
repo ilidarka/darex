@@ -1,5 +1,8 @@
 /*index.html media*/
 @media (max-width: 1100px) {
+    header {
+        padding: 0 20px;
+    }
     .customerChoiseSection .motoListItem {
         width: 33%;
     }
@@ -314,12 +317,24 @@
         flex-wrap: wrap;
     }
 }
-@media (max-width: 652px) {
-    .productsSection .productsItem {
-        width: 80% !important;
+@media (max-width: 720px) {
+    .productsSection .filterContainer {
+        display: none;
+    }
+    .productsSection .showFilterButton {
+        display: flex;
     }
     .productsSection .productsContainer {
-        width: 60% !important;
+        width: 100%;
+        align-items: center;
+    }
+    .productsSection .productsItems {
+        align-items: center;
+    }
+}
+@media (max-width: 652px) {
+    .productsSection .productsItem {
+        width: 45% !important;
     }
     .productsSection .filterContainer {
         width: 40% !important;
@@ -344,7 +359,11 @@
         gap: 5px;
     }
     .productsSection .productsItem {
-        width: 100% !important;
+        width: 80% !important;
+        align-items: center;
+    }
+    .productsSection .productDesc {
+        align-items: center !important;
     }
     .productsSection .mainWrapper {
         padding: 0 10px;
