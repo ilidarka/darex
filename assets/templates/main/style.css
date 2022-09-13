@@ -92,6 +92,7 @@ header .mainWrapper {
 .headerText {
     margin-left: 22px;
     color: #323232;
+    width: 20%;
 }
 header .signInInput {
     height: 44px;
