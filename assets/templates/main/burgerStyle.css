@@ -36,6 +36,9 @@
 .nav ul {
     padding: 0 22px;
     margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .nav li {
     list-style: none;
@@ -82,6 +85,6 @@
 }
 .change-bg {
     width: 640px;
-    height: 650px;
+    height: 750px;
     transform: translate(-60%,-30%);
 }
