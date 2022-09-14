@@ -91,7 +91,7 @@
     footer .footerTop {
         flex-direction: column-reverse;
         align-items: center;
-        gap: 20px;
+        gap: 45px;
         padding-bottom: 20px;
     }
     footer .footerTop .leftContainer {
@@ -223,8 +223,12 @@
     .benefitsSection h3 {
         font-size: 28px;
     }
+    .mainSection h2 {
+        margin-top: 30px;
+    }
     footer .footerTop {
         padding: 0 15px;
+        gap: 20px;
     }
     footer .rightContainer {
         margin-bottom: 30px;

@@ -113,7 +113,10 @@ header .requestCall {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 4px;
+    gap: 8px;
+}
+header .requestCall .number a {
+    text-decoration: none;
 }
 header .requestCall .number span {
     font-weight: 600;
@@ -598,7 +601,7 @@ footer .mainWrapper {
     align-items: center;
 }
 footer .footerTop {
-    margin-top: 57px; 
+    margin-top: 45px; 
     width: 100%;
     display: flex;
     justify-content: space-between;
